@@ -3,7 +3,7 @@ import css from 'components/Profile/Profile.module.css'
 export const Profile = ({username,tag,location,avatar,stats}) => {
   
   return  <div className={css.profile}>
-  <div className={css.description}>
+  <div >
     <img
       src={avatar}
       alt="User avatar"
@@ -15,7 +15,7 @@ export const Profile = ({username,tag,location,avatar,stats}) => {
     <p className={css.location}>{location}</p>
   </div>
 
-  <ul className={css.stats}>
+  <ul >
     <li>
       <span className={css.label}>Followers:</span>
       <span className="quantity">{stats.followers}</span>
