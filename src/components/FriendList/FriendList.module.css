@@ -1,0 +1,11 @@
+.item{
+    display: flex;
+    border: 2px solid rgb(186, 180, 178);
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-content: baseline;
+}
+.name{
+    margin-left: 5px;
+}

@@ -1,0 +1,17 @@
+.thead{
+    background-color: #AFEEEE;
+}
+.tbody{
+    background-color:aquamarine;
+}
+.table{
+    width: 100%;
+    margin-top: 50px;
+}
+.td{
+    text-align: center;
+    line-height: 30px;
+}
+th{
+    line-height: 30px;
+}
