@@ -1,7 +1,7 @@
 import css from 'components/Statistics/Statistics.module.css';
-export const Statistics = ({stats})=>
+export const Statistics = ({stats , title})=>
 <section className={css.section}>
-  <h2 className={css.h2}>Upload stats</h2>
+  {title && <h2 className={css.h2}>{title}</h2>}
 
   <ul className={css.statlist}>
 
