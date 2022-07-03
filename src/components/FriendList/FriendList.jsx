@@ -1,4 +1,5 @@
-import css from 'components/FriendList/FriendList.module.css'
+import css from 'components/FriendList/FriendList.module.css';
+import PropTypes from 'prop-types';
 export const FriendList = ({friends})=>
     <ul >
  {friends.map(friend =>
@@ -7,6 +8,8 @@ export const FriendList = ({friends})=>
     <img className="avatar" src={friend.avatar} alt="User avatar" width="48" /> 
      <p className={css.name}>{friend.name}</p> 
    </li> )}
-       </ul> 
+       </ul> ;
 
-
+FriendList.propTypes ={
+    friends:PropTypes.array
+}

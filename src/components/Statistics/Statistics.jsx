@@ -1,4 +1,5 @@
 import css from 'components/Statistics/Statistics.module.css';
+import PropTypes from 'prop-types';
 export const Statistics = ({stats , title})=>
 <section className={css.section}>
   {title && <h2 className={css.h2}>{title}</h2>}
@@ -21,4 +22,8 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 };
 
-console.log(getRandomHexColor() )
+console.log(getRandomHexColor() );
+Statistics.propTypes = {
+  stats:PropTypes.array,
+  title:PropTypes.string
+}

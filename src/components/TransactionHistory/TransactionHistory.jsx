@@ -1,4 +1,5 @@
 import css from 'components/TransactionHistory/TransactionHistory.module.css'
+import PropTypes from 'prop-types';
 export const TransactionHistory = ({items})=>
   <table className={css.table}>
  <thead className={css.thead}>
@@ -17,6 +18,8 @@ export const TransactionHistory = ({items})=>
       </tr>
 )}
   </tbody>
- </table>
-
+ </table>;
+TransactionHistory.propTypes ={
+  items:PropTypes.array
+}
 
