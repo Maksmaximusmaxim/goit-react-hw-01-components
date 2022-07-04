@@ -10,16 +10,19 @@ export const TransactionHistory = ({items})=>
     </tr>
   </thead>
   <tbody className={css.tbody}>
-{items.map(e=>
-        <tr key={e.id}>
-        <td className={css.td}>{e.type}</td>
-        <td className={css.td}>{e.amount}</td>
-        <td className={css.td}>{e.currency}</td>
+{items.map(({id,type,amount,currency})=>
+        <tr key={id}>
+        <td className={css.td}>{type}</td>
+        <td className={css.td}>{amount}</td>
+        <td className={css.td}>{currency}</td>
       </tr>
 )}
   </tbody>
  </table>;
 TransactionHistory.propTypes ={
-  items:PropTypes.array
+  id: PropTypes.string.isRequired,
+  type : PropTypes.string.isRequired,
+  amount :PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired
 }
 
