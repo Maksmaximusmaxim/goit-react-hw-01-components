@@ -7,10 +7,5 @@ export const FrItem =(({id,isOnline,avatar,name})=>{
   </li> 
 }
 );
-FrItem.propTypes={
-    id:PropTypes.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-}
+
   
